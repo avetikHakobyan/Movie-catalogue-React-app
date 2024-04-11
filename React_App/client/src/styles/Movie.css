@@ -1,0 +1,82 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.grid-item {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #212529;
+    border: 1px solid whitesmoke;
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.grid-item:hover {
+    background-color: #16191b;
+}
+
+.border-whitesmoke {
+    border-color: whitesmoke;
+}
+
+.py-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+}
+
+.magnifier {
+    width: 20px;
+}
+
+.col {
+    display: grid;
+    margin-left: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    cursor: default !important;
+}
+
+.input-group {
+    position: unset !important;
+}
+
+.form-control {
+    position: unset !important;
+    color: #d5d1cc !important;
+    border: none;
+}
+
+.input-control {
+    color: rgb(209, 205, 199);
+    background-color: rgb(24, 26, 27);
+    border: 1px solid rgb(60, 65, 68);
+}
+
+.input-control.form-control:focus {
+    background-color: rgb(24, 26, 27);
+    border-color: rgb(1, 57, 137) !important;
+    outline-color: initial;
+    box-shadow: rgb(2 80 196 / 25%) 0px 0px 0px 0.25rem !important;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    z-index: 0 !important;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.no-background {
+    background: none;
+}
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
